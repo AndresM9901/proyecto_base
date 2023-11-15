@@ -33,6 +33,7 @@ class AppTheme {
     this.selectedThemeColor = 0
   }) : assert(selectedThemeColor >= 0 && selectedThemeColor < _colorTheme.length);
 
+
   ThemeData theme() {
     return ThemeData(
       useMaterial3: true,
@@ -44,7 +45,7 @@ class AppTheme {
         titleSmall: TextStyle(
           fontSize: 12,
           fontWeight: FontWeight.w400,
-          color: _primaryColor
+          color: _textColorLight
         ),
         bodyMedium: TextStyle(
           fontSize: 16,
@@ -57,6 +58,32 @@ class AppTheme {
           color: Colors.blue
         ),
       ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: const ButtonStyle(
+          backgroundColor: MaterialStatePropertyAll(_primaryColor),
+          textStyle: MaterialStatePropertyAll(
+            TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.w500,
+            )
+          ),
+          padding: MaterialStatePropertyAll(
+            EdgeInsets.all(16.0)
+          ),
+          shape: MaterialStatePropertyAll(
+            RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(8.0))
+            )
+          )
+        ).copyWith(
+          foregroundColor: MaterialStateProperty.resolveWith<Color>((Set<MaterialState> states) {
+            if (states.contains(MaterialState.pressed)) {
+              return _textColorLight;
+            }
+            return _textColorDark;
+          })
+        )
+      )
     );
   }
 }

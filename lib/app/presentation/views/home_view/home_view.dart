@@ -28,10 +28,11 @@ class HomeView extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-                onPressed: (){},
-                child: const Text(
+              onPressed: (){},
+              style: Theme.of(context).elevatedButtonTheme.style,
+              child: const Text(
                   'Botones view',
-                ),
+              ),
             ),
             Text(
               'Home view titulo',
