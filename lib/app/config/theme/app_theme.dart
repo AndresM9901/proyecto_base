@@ -7,6 +7,9 @@ const Color _accentColorSecondary = Color(0xFF386363);
 const Color _colorCta = Color(0xFFFFC107);
 const Color _accentColorCta = Color(0xFFE0A800);
 const Color _backgroundColorLight = Color(0xFFFFFFFF);
+const Color _textColorLight = Color(0xFF000000);
+const Color _textColorDark = Color(0xFFFFFFFF);
+const Color _backgroundColorDark = Color(0xFF000000);
 const Color _errorColor = Color(0xFFFF0000);
 
 const List<Color> _colorTheme = [
@@ -17,6 +20,9 @@ const List<Color> _colorTheme = [
   _colorCta,
   _accentColorCta,
   _backgroundColorLight,
+  _textColorLight,
+  _textColorDark,
+  _backgroundColorDark,
   _errorColor
 ];
 
@@ -31,6 +37,26 @@ class AppTheme {
     return ThemeData(
       useMaterial3: true,
       colorSchemeSeed: _colorTheme[selectedThemeColor],
+      appBarTheme: AppBarTheme(
+        color: _colorTheme[selectedThemeColor],
+      ),
+      textTheme: const TextTheme(
+        titleSmall: TextStyle(
+          fontSize: 12,
+          fontWeight: FontWeight.w400,
+          color: _primaryColor
+        ),
+        bodyMedium: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.w400,
+          color: Colors.pink
+        ),
+        bodyLarge: TextStyle(
+          fontSize: 18,
+          fontWeight: FontWeight.w400,
+          color: Colors.blue
+        ),
+      ),
     );
   }
 }

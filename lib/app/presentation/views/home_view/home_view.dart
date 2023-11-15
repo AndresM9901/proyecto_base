@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../config/theme/app_theme.dart';
+
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
 
@@ -8,6 +10,19 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text(
+            'Home',
+        ),
+        actions: [
+          IconButton(
+              onPressed: (){},
+              icon: const Icon(
+                Icons.search,
+              )
+          ),
+        ],
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -16,9 +31,20 @@ class HomeView extends StatelessWidget {
                 onPressed: (){},
                 child: const Text(
                   'Botones view',
-                )
+                ),
             ),
-
+            Text(
+              'Home view titulo',
+              style: Theme.of(context).textTheme.titleSmall,
+            ),
+            Text(
+              'Home view',
+              style: Theme.of(context).textTheme.bodyMedium,
+            ),
+            Text(
+              'Home view',
+              style: Theme.of(context).textTheme.bodyLarge,
+            )
           ],
         ),
       ),
