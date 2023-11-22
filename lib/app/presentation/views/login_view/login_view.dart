@@ -17,7 +17,7 @@ class LoginView extends StatelessWidget {
               children: [
                 SvgPicture.asset(
                   'assets/icons/Traveler.svg',
-
+                  width: 180,
                 )
               ],
             ),
