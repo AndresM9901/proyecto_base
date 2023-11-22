@@ -4,7 +4,7 @@ import 'package:proyecto_base/app/presentation/views/views_links.dart';
 final appRouter = GoRouter(
     routes: [
       GoRoute(
-        path: '/',
+        path: '/home',
         name: HomeView.title,
         builder: (context, state) => const HomeView(),
       ),
@@ -22,6 +22,11 @@ final appRouter = GoRouter(
         path: '/welcome',
         name: WelcomeView.title,
         builder: (context, state) => WelcomeView(),
+      ),
+      GoRoute(
+        path: '/',
+        name: LoginView.title,
+        builder: (context, state) => const LoginView(),
       )
     ]
 );
