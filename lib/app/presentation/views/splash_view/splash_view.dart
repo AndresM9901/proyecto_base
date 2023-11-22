@@ -12,7 +12,7 @@ class SplashView extends StatelessWidget {
           children: [
             Center(
               child: Image.asset(
-                "assets/icons/Traveler1.png",
+                "assets/icons/ic_launcher_1.png",
                 width: 211,
                 height: 211,
               ),

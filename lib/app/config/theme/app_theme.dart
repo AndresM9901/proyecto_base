@@ -64,7 +64,7 @@ class AppTheme {
           textStyle: MaterialStatePropertyAll(
             TextStyle(
               fontSize: 20,
-              fontWeight: FontWeight.w500,
+              fontWeight: FontWeight.w700,
             )
           ),
           padding: MaterialStatePropertyAll(
@@ -78,7 +78,7 @@ class AppTheme {
         ).copyWith(
           foregroundColor: MaterialStateProperty.resolveWith<Color>((Set<MaterialState> states) {
             if (states.contains(MaterialState.pressed)) {
-              return _textColorLight;
+              return _textColorDark;
             }
             return _textColorDark;
           })
