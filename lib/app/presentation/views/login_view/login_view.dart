@@ -18,6 +18,10 @@ class LoginView extends StatelessWidget {
                 SvgPicture.asset(
                   'assets/icons/Traveler.svg',
                   width: 180,
+                ),
+                Text(
+                  'Iniciar Sesion',
+                  style: Theme.of(context).textTheme.bodyLarge,
                 )
               ],
             ),

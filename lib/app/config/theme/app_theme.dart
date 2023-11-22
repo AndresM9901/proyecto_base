@@ -50,12 +50,12 @@ class AppTheme {
         bodyMedium: TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.w400,
-          color: Colors.pink
+          color: _textColorLight
         ),
         bodyLarge: TextStyle(
           fontSize: 18,
           fontWeight: FontWeight.w400,
-          color: Colors.blue
+          color: _textColorLight
         ),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
