@@ -26,7 +26,7 @@ final appRouter = GoRouter(
       GoRoute(
         path: '/',
         name: LoginView.title,
-        builder: (context, state) => const LoginView(),
+        builder: (context, state) => LoginView(),
       )
     ]
 );

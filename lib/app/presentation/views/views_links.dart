@@ -4,3 +4,7 @@ export 'package:proyecto_base/app/presentation/views/splash_view/splash_view.dar
 export 'package:proyecto_base/app/presentation/views/welcome_view/welcome_view.dart';
 export 'package:proyecto_base/app/presentation/views/login_view/login_view.dart';
 export 'package:proyecto_base/app/presentation/views/register_view/register_view.dart';
+export 'package:proyecto_base/app/presentation/widgets/my_text_form.dart';
+export 'package:proyecto_base/app/presentation/widgets/my_button_form.dart';
+export 'package:proyecto_base/app/presentation/views/login_view/widgets/login_divider.dart';
+export 'package:proyecto_base/app/presentation/widgets/my_social_button.dart';

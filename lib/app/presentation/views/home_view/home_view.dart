@@ -55,18 +55,7 @@ class HomeView extends StatelessWidget {
                   'Botones view',
               ),
             ),
-            Text(
-              'Home view titulo',
-              style: Theme.of(context).textTheme.titleSmall,
-            ),
-            Text(
-              'Home view',
-              style: Theme.of(context).textTheme.bodyMedium,
-            ),
-            Text(
-              'Home view',
-              style: Theme.of(context).textTheme.bodyLarge,
-            )
+
           ],
         ),
       ),

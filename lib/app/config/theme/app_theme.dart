@@ -57,6 +57,11 @@ class AppTheme {
           fontWeight: FontWeight.w400,
           color: _textColorLight
         ),
+        titleMedium: TextStyle(
+          fontSize: 24,
+          fontWeight: FontWeight.w700,
+          color: _textColorLight
+        ),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: const ButtonStyle(
