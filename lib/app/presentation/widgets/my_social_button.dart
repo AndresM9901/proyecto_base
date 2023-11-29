@@ -20,11 +20,11 @@ class MySocialButton extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(5),
           child: Container(
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(5),
             decoration: BoxDecoration(
-              border: Border.all(color: Theme.of(context).colorScheme.onBackground),
+              border: Border.all(color: Theme.of(context).colorScheme.onSecondary),
               borderRadius: BorderRadius.circular(10),
-              color: Theme.of(context).colorScheme.onBackground,
+              color: ThemeData().colorScheme.secondary,
             ),
             child: Image.asset(
               imagePath,

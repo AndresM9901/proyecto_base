@@ -35,7 +35,7 @@ class MyTextForm extends StatelessWidget {
           hintText: hintText,
           suffixIcon: suffixIcon ? const Icon(Icons.visibility) : null,
           hintStyle: Theme.of(context).textTheme.bodyMedium?.copyWith(
-            color: Theme.of(context).colorScheme.onBackground
+            color: Theme.of(context).primaryColor
           ),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8.0),

@@ -18,7 +18,7 @@ class MyButtonForm extends StatelessWidget {
         alignment: Alignment.center,
         height: 50,
         decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.primary,
+          color: Theme.of(context).primaryColor,
           borderRadius: BorderRadius.circular(10),
         ),
         child: Text(

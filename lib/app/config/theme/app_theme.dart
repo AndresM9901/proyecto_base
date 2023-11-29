@@ -37,7 +37,7 @@ class AppTheme {
   ThemeData theme() {
     return ThemeData(
       useMaterial3: true,
-      colorSchemeSeed: _colorTheme[selectedThemeColor],
+      primaryColor: _colorTheme[selectedThemeColor],
       appBarTheme: AppBarTheme(
         color: _colorTheme[selectedThemeColor],
       ),
@@ -63,6 +63,7 @@ class AppTheme {
           color: _textColorLight
         ),
       ),
+
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: const ButtonStyle(
           backgroundColor: MaterialStatePropertyAll(_primaryColor),
