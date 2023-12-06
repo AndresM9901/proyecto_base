@@ -28,6 +28,17 @@ const List<Color> _colorTheme = [
 
 class AppTheme {
   final int selectedThemeColor;
+  get getPrimaryColor => _colorTheme[0];
+  get getAccentColor => _colorTheme[1];
+  dynamic get getSecondaryColor => _colorTheme[2];
+  get getAccentColorSecondary => _colorTheme[3];
+  get getCtaColor => _colorTheme[4];
+  get getAccentCtaColor => _colorTheme[5];
+  get getBackgroundColorLight => _colorTheme[6];
+  get getTextColorLight => _colorTheme[7];
+  get getTextColorDark => _colorTheme[8];
+  get getBackgroundColorDark => _colorTheme[9];
+  get getErrorColor => _colorTheme[10];
 
   AppTheme({
     this.selectedThemeColor = 0
@@ -62,19 +73,28 @@ class AppTheme {
           fontWeight: FontWeight.w700,
           color: _textColorLight
         ),
+        titleLarge: TextStyle(
+          fontSize: 45,
+          color: _primaryColor,
+          fontFamily: 'Poppins',
+          fontWeight: FontWeight.bold
+        )
       ),
-
+      scaffoldBackgroundColor: _backgroundColorLight,
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: const ButtonStyle(
+          elevation: MaterialStatePropertyAll(3),
+          padding: MaterialStatePropertyAll(
+            EdgeInsetsDirectional.fromSTEB(24, 0, 24, 0)
+          ),
           backgroundColor: MaterialStatePropertyAll(_primaryColor),
           textStyle: MaterialStatePropertyAll(
             TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.w700,
+              fontFamily: 'Poppins',
+              color: _textColorDark
             )
-          ),
-          padding: MaterialStatePropertyAll(
-            EdgeInsets.all(16.0)
           ),
           shape: MaterialStatePropertyAll(
             RoundedRectangleBorder(

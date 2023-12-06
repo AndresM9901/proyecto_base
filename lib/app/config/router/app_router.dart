@@ -19,12 +19,12 @@ final appRouter = GoRouter(
         builder: (context, state) => const SplashView(),
       ),
       GoRoute(
-        path: '/welcome',
+        path: '/',
         name: WelcomeView.title,
         builder: (context, state) => WelcomeView(),
       ),
       GoRoute(
-        path: '/',
+        path: '/login',
         name: LoginView.title,
         builder: (context, state) => LoginView(),
       )
